@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { Link, Route, Routes } from "react-router-dom"
+import { Link, Route, Routes } from 'react-router-dom'
 import { FaBars, FaTimes } from "react-icons/fa"
-import Home from './Home'
+import Home from './pages/Home'
 import DiscipleshipGuide from "./pages/DiscipleshipGuide"
 
 function NavBar() {
@@ -38,7 +38,7 @@ function NavBar() {
 
     <Routes>
         <Route index path="/gmpc/" element={<Home />}/>
-        <Route path="/gmpc/guide" element={<Home />}/>
+        <Route path="/gmpc/guide" element={<DiscipleshipGuide />}/>
     </Routes>
     
   </>

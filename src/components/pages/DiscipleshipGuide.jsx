@@ -4,7 +4,7 @@ import Win from './discipleshipguide/win/Win'
 function DiscipleshipGuide() {
   return (
     <>
-        <div>Test</div>
+        <Win />
     </>
   )
 }
