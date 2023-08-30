@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link, Route, Routes } from 'react-router-dom'
 import { FaBars, FaTimes } from "react-icons/fa"
 import Home from './pages/Home'
-import DiscipleshipGuide from './pages/DiscipleshipGuide'
+import DiscipleshipGuide from './components/pages/DiscipleshipGuide'
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false)
