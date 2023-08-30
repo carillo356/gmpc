@@ -37,8 +37,8 @@ function NavBar() {
     </div>
 
     <Routes>
-        <Route path="/gmpc/" element={<Home />}/>
-        <Route path="/gmpc/guide" element={<DiscipleshipGuide />}/>
+        <Route path="/gmpc/" element={<DiscipleshipGuide />}/>
+        <Route path="/gmpc/guide" element={<Home />}/>
     </Routes>
     
   </>
