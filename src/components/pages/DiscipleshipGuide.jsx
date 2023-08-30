@@ -1,12 +1,12 @@
 import React from 'react'
 import Win from './discipleshipguide/win/Win'
 
-function Guide() {
+function DiscipleshipGuide() {
   return (
     <>
-        <Win />
+        <div>Test</div>
     </>
   )
 }
 
-export default Guide
+export default DiscipleshipGuide
