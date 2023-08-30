@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link, Route, Routes, HashRouter } from 'react-router-dom'
+import { Link, Route, Routes } from 'react-router-dom'
 import { FaBars, FaTimes } from "react-icons/fa"
 import Home from './pages/Home'
 import DiscipleshipGuide from "./pages/DiscipleshipGuide"
@@ -37,7 +37,7 @@ function NavBar() {
     </div>
 
       <Routes>
-          <Route index path="/" element={<DiscipleshipGuide />}/>
+          <Route index path="/" element={<Home />}/>
           <Route path="/guide" element={<DiscipleshipGuide />}/>
       </Routes>
    
