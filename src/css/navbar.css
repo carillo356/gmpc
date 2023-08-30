@@ -1,0 +1,40 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 7vh;
+    padding: 2vh 0;
+}
+
+.website-name {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2vh;
+}
+
+.nav-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.nav-icon {
+    height: 3vh;
+    width: auto;
+}
+
+.mobile-nav-links {
+    height: 100vh;
+    width: auto;
+    
+}
+
+.mobile-nav-links > nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
