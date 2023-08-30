@@ -1,7 +1,7 @@
 import React from 'react'
 import Win from './discipleshipguide/win/Win'
 
-function DiscipleshipGuide() {
+function Guide() {
   return (
     <>
         <Win />
@@ -9,4 +9,4 @@ function DiscipleshipGuide() {
   )
 }
 
-export default DiscipleshipGuide
+export default Guide
