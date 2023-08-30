@@ -5,6 +5,7 @@ import { BrowserRouter } from 'react-router-dom'
 import './css/navbar.css'
 import './css/discipleshipguide.css'
 import './css/main.css'
+import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
