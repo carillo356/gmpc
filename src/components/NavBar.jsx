@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link, Route, Routes } from 'react-router-dom'
 import { FaBars, FaTimes } from "react-icons/fa"
 import Home from './pages/Home'
-import DiscipleshipGuide from './pages/DiscipleshipGuide'
+import DiscipleshipGuide from "./pages/DiscipleshipGuide"
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -37,8 +37,8 @@ function NavBar() {
     </div>
 
     <Routes>
-        <Route index path='/gmpc/' element={<Home />}/>
-        <Route path='/gmpc/guide' element={<DiscipleshipGuide />}/>
+        <Route index path="/gmpc/" element={<Home />}/>
+        <Route path="/gmpc/guide" element={<DiscipleshipGuide />}/>
     </Routes>
     
   </>
