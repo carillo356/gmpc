@@ -3,6 +3,7 @@ import { Link, Route, Routes } from "react-router-dom"
 import { FaBars, FaTimes } from "react-icons/fa"
 import Home from './Home'
 import DiscipleshipGuide from "./pages/DiscipleshipGuide"
+import Test from './Test'
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -23,7 +24,7 @@ function NavBar() {
           <button className='nav-btn' onClick={handleClick}><FaBars className='nav-icon'/></button>
           <nav className={isOpen ? 'nav-links' : 'hide'}>
               <Link to="/gmpc/" onClick={() => setIsMenuOpen(false)}>Start Here</Link>
-              <Link to="/gmpc/guide" onClick={() => setIsMenuOpen(false)}>Discipleship Guide</Link>
+              <Link to="/gmpc/test" onClick={() => setIsMenuOpen(false)}>Discipleship Guide</Link>
           </nav>
       </header>
     </div>
@@ -32,13 +33,13 @@ function NavBar() {
         <nav>
             <button className='nav-btn' onClick={handleClick}><FaTimes className='nav-icon'/></button>
             <Link to="/gmpc/" onClick={() => setIsMenuOpen(false)}>Start Here</Link>
-            <Link to="/gmpc/guide" onClick={() => setIsMenuOpen(false)}>Discipleship Guide</Link>
+            <Link to="/gmpc/test" onClick={() => setIsMenuOpen(false)}>Discipleship Guide</Link>
         </nav>
     </div>
 
     <Routes>
         <Route index path="/gmpc/" element={<Home />}/>
-        <Route path="/gmpc/guide" element={<DiscipleshipGuide />}/>
+        <Route index path="/gmpc/test" element={<Test />}/>
     </Routes>
     
   </>
